@@ -1,0 +1,143 @@
+import Product1 from '../assets/product-1.jpg';
+import Product2 from '../assets/product-2.webp';
+import Product3 from '../assets/product-3.jpg';
+import Product4 from '../assets/product-4.jpg';
+import Product5 from '../assets/product-5.jpg';
+import Product6 from '../assets/product-6.jpg';
+import Product7 from '../assets/product-7.webp';
+
+const ProductData = [
+	{
+		id: 1,
+		title: '3 Sisters Beer',
+		price: 180,
+		quantity: 1,
+		img: Product1,
+		featured: true,
+		category: 1,
+		description: `Refreshing, cool, fun, scrumptious, flavorful, juicy, fizzy drink with 0% alcohol which you can have with family, friends, children or alone at home, in office, restaurants, generally, while driving, travelling, partying on occasions or festivals. India's Next GEN Recreational beverage is here.`,
+		flavours: [
+			{ value: 'cranberry', label: 'Cranberry' },
+			{ value: 'ginger ale', label: 'Ginger Ale' },
+			{ value: 'tonic water', label: 'Tonic Water' },
+		],
+		countInStock: 10,
+		rating: 4.5,
+		numReviews: 12,
+	},
+	{
+		id: 2,
+		title: 'Prime',
+		price: 150,
+		quantity: 1,
+		img: Product2,
+		featured: true,
+		category: 1,
+		description: `PRIME was developed to fill the void where great taste meets function. With bold, thirst-quenching flavors to help you refresh, replenish, and refuel, PRIME is the perfect boost for any endeavor. We're confident you'll love it as much as we do.`,
+		flavours: [
+			{ value: 'blue raspberry', label: 'Blue Raspberry' },
+			{ value: 'tropical punch', label: 'Tropical Punch' },
+			{ value: 'strawberry watermelon', label: 'Strawberry Watermelon' },
+			{ value: 'ice pop', label: 'Ice Pop' },
+			{ value: 'meta moon', label: 'Meta Moon' },
+		],
+		countInStock: 5,
+		rating: 3,
+		numReviews: 3,
+	},
+	{
+		id: 3,
+		title: 'Lays',
+		price: 100,
+		quantity: 1,
+		img: Product6,
+		featured: true,
+		category: 2,
+		description: `At Lay’s we get it – and you may be closer to a farm than you think. So go ahead and discover what makes Lay’s oh so delicious. Every bag of Lay's Potato Chips in the US is made from our very own chip-perfecting potatoes grown on over 100 farms across the US and a handful in Canada.`,
+		flavours: [
+			{ value: 'Classic Potato Chips', label: 'Classic Potato Chips' },
+			{ value: 'BBQ Flavored', label: 'BBQ Flavored' },
+			{ value: 'Sour Cream', label: 'Sour Cream' },
+			{ value: 'Salt & Vinegar', label: 'Salt & Vinegar' },
+		],
+		countInStock: 14,
+		rating: 3.5,
+		numReviews: 15,
+	},
+	{
+		id: 4,
+		title: 'Cheetos',
+		price: 100,
+		quantity: 1,
+		img: Product7,
+		featured: true,
+		category: 2,
+		description: `CHEETOS® snacks are the much-loved cheesy treats that are fun for everyone! You just can’t eat a CHEETOS snack without licking the signature “cheetle” off your fingertips. And wherever the CHEETOS brand and CHESTER CHEETAH go, cheesy smiles are sure to follow.`,
+		flavours: [
+			{ value: 'Crunchy Cheese', label: 'Crunchy Cheese' },
+			{
+				value: 'Crunchy Flaming Hot Cheese',
+				label: 'Crunchy Flaming Hot Cheese',
+			},
+			{ value: 'Puff Cheese', label: 'Puff Cheese' },
+			{
+				value: 'White Cheedar Bites Cheese',
+				label: 'White Cheedar Bites Cheese',
+			},
+		],
+		countInStock: 10,
+		rating: 3.5,
+		numReviews: 21,
+	},
+	{
+		id: 5,
+		title: 'NESCAFÉ Drinks',
+		price: 190,
+		quantity: 1,
+		img: Product3,
+		featured: false,
+		category: 1,
+		description: `Discover a uniquely smooth coffee experience with NESCAFÉ Smoovlatte, one of our hugely popular cold, on-the-go beverages. Enjoy the perfect balance of silky smooth milk and great tasting coffee in a convenient, resealable bottle.`,
+		flavours: [
+			{ value: 'NESCAFÉ Smoovlatté', label: 'NESCAFÉ Smoovlatté' },
+			{ value: 'NESCAFÉ Shakissimo', label: 'NESCAFÉ Shakissimo' },
+		],
+		countInStock: 14,
+		rating: 4,
+		numReviews: 6,
+	},
+	{
+		id: 6,
+		title: 'Red Bull',
+		price: 350,
+		quantity: 1,
+		img: Product4,
+		featured: false,
+		category: 1,
+		description: `Red Bull Energy Drink is appreciated worldwide by top athletes, busy professionals, university students and travellers on long journeys. Red Bull Energy Drink is a functional beverage giving you wings whenever you need them.`,
+		countInStock: 8,
+		rating: 5,
+		numReviews: 30,
+	},
+	{
+		id: 7,
+		title: 'Minute Maid',
+		price: 100,
+		quantity: 1,
+		img: Product5,
+		featured: true,
+		category: 1,
+		description: `Here at Minute Maid, we pride ourselves on our history of providing quality products to families around the world. With more than 100 different flavors and varieties from orange juice to apple juice, and lemonades to punches, we use the freshest ingredients to ensure you get the highest quality juices.`,
+		flavours: [
+			{ value: 'Apple Juice', label: 'Apple Juice' },
+			{ value: 'Cranberry Juice', label: 'Cranberry Juice' },
+			{ value: 'Pineapple Orange', label: 'Pineapple Orange' },
+			{ value: 'Mixed Berry', label: 'Mixed Berry' },
+		],
+		countInStock: 20,
+		rating: 2.5,
+		numReviews: 10,
+	},
+];
+
+export default ProductData;
