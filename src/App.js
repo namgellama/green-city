@@ -7,6 +7,7 @@ import CategoryData from './data/CategoryData';
 import Footer from './components/layouts/Footer';
 import ProductPage from './pages/ProductPage';
 import ProductDetailPage from './pages/ProductDetailPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
 	const [product, setProduct] = useState(ProductData);
@@ -50,8 +51,16 @@ function App() {
 				<Route path="/products" element={<ProductPage product={product} />} />
 				<Route
 					path="/products/:id"
-					element={<ProductDetailPage product={product} />}
+					element={
+						<ProductDetailPage
+							product={product}
+							handleIncrease={increaseQuantity}
+							handleDecrease={decreaseQuantity}
+							handleAddToCart={addToCart}
+						/>
+					}
 				/>
+				<Route path="/contact" element={<ContactPage />} />
 			</Routes>
 			<Footer />
 		</>
