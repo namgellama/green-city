@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-// import Rating from './shared/Rating';
+import Rating from './shared/Rating';
 import Card from './shared/Card';
 
 function FeaturedProduct({ product }) {
@@ -32,7 +32,7 @@ function FeaturedProduct({ product }) {
 								alt="Featured product image"
 							/>
 							<div className="flex flex-col items-center mt-5">
-								{/* <Rating value={item.rating} /> */}
+								<Rating value={item.rating} />
 								<h1 className="text-2xl font-semibold mt-3">{item.title}</h1>
 								<p className="text-xl font-semibold">Rs. {item.price}</p>
 							</div>

@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/layouts/Navbar';
-import Showcase from './components/Showcase';
 import HomePage from './pages/HomePage';
 import ProductData from './data/ProductData';
 import CategoryData from './data/CategoryData';
+import Footer from './components/layouts/Footer';
 
 function App() {
 	const [product, setProduct] = useState(ProductData);
@@ -46,6 +46,7 @@ function App() {
 					element={<HomePage product={product} category={category} />}
 				/>
 			</Routes>
+			<Footer />
 		</>
 	);
 }
