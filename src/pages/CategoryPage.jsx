@@ -3,13 +3,11 @@ import { Link } from 'react-router-dom';
 import Card from '../components/shared/Card';
 
 function CategoryPage({ category, product }) {
-	const params = useParams();
+	const { id } = useParams();
 
-	const categories = category.filter((item) => item.id === Number(params.id));
+	const categories = category.filter((item) => item.id === Number(id));
 
-	const products = product.filter(
-		(item) => item.category === Number(params.id)
-	);
+	const products = product.filter((item) => item.category === Number(id));
 
 	return categories.map((category) => (
 		<section

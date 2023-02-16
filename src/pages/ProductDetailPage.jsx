@@ -9,9 +9,9 @@ function ProductDetailPage({
 	handleIncrease,
 	handleAddToCart,
 }) {
-	const params = useParams();
+	const { id } = useParams();
 
-	const products = product.filter((item) => item.id === Number(params.id));
+	const products = product.filter((item) => item.id === Number(id));
 
 	return products.map((item) => (
 		<section
