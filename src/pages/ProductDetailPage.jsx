@@ -16,7 +16,7 @@ function ProductDetailPage({
 	return products.map((item) => (
 		<section
 			key={item.id}
-			className="w-full lg:w-[1200px] mx-auto my-8 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:gap-8 p-2 cursor-pointer justify-center"
+			className="w-full lg:w-[1200px] mx-auto my-8 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:gap-8 py-2 px-4 lg:px-2 cursor-pointer justify-center"
 		>
 			<div className="mb-8">
 				<img
