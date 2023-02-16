@@ -68,7 +68,7 @@ function Navbar({ size }) {
 						<div className="flex items-center">
 							<HiShoppingCart size={25} className="mr-1" />
 							Cart
-							<p className="ml-1">({size})</p>
+							<p className="ml-1">({size > 0 ? size : '0'})</p>
 						</div>
 					</Link>
 				</li>

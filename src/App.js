@@ -8,10 +8,13 @@ import Footer from './components/layouts/Footer';
 import ProductPage from './pages/ProductPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import ContactPage from './pages/ContactPage';
+import CartPage from './pages/CartPage';
 
 function App() {
 	const [product, setProduct] = useState(ProductData);
 	const [category, setCategory] = useState(CategoryData);
+
+	const [cart, setCart] = useState([]);
 
 	const increaseQuantity = (item) => {
 		const products = [...product];
@@ -61,6 +64,17 @@ function App() {
 					}
 				/>
 				<Route path="/contact" element={<ContactPage />} />
+				<Route
+					path="/cart"
+					element={
+						<CartPage
+							cart={cart}
+							setCart={setCart}
+							handleIncrease={increaseQuantity}
+							handleDecrease={decreaseQuantity}
+						/>
+					}
+				/>
 			</Routes>
 			<Footer />
 		</>
