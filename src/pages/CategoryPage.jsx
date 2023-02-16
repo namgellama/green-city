@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Card from '../components/shared/Card';
+import Rating from '../components/shared/Rating';
 
 function CategoryPage({ category, product }) {
 	const { id } = useParams();
@@ -32,7 +33,8 @@ function CategoryPage({ category, product }) {
 								alt="Featured product image"
 							/>
 							<div className="flex flex-col items-center mt-5">
-								<h1 className="text-2xl font-semibold">{item.title}</h1>
+								<Rating value={item.rating} />
+								<h1 className="text-2xl font-semibold mt-3">{item.title}</h1>
 								<p className="text-xl font-semibold">Rs. {item.price}</p>
 							</div>
 						</Card>
