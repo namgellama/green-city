@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import ProductData from './data/ProductData';
 import CategoryData from './data/CategoryData';
 import Footer from './components/layouts/Footer';
+import ProductPage from './pages/ProductPage';
 
 function App() {
 	const [product, setProduct] = useState(ProductData);
@@ -45,6 +46,7 @@ function App() {
 					path="/"
 					element={<HomePage product={product} category={category} />}
 				/>
+				<Route path="/products" element={<ProductPage product={product}  />} />
 			</Routes>
 			<Footer />
 		</>
