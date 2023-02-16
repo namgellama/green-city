@@ -9,10 +9,11 @@ import ProductPage from './pages/ProductPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import ContactPage from './pages/ContactPage';
 import CartPage from './pages/CartPage';
+import CategoryPage from './pages/CategoryPage';
 
 function App() {
 	const [product, setProduct] = useState(ProductData);
-	const [category, setCategory] = useState(CategoryData);
+	const [category] = useState(CategoryData);
 
 	const [cart, setCart] = useState([]);
 
@@ -74,6 +75,10 @@ function App() {
 							handleDecrease={decreaseQuantity}
 						/>
 					}
+				/>
+				<Route
+					path="/category/:id"
+					element={<CategoryPage category={category} product={product} />}
 				/>
 			</Routes>
 			<Footer />
