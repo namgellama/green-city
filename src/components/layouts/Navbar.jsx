@@ -10,12 +10,12 @@ function Navbar({ size }) {
 
 	return (
 		<nav className="w-full sticky top-0 bg-black text-white text-lg font-normal z-10 flex items-center justify-between py-3 px-8 md:flex-row md:py-1 lg:flex-row lg:py-0">
-			<div className="flex items-center md:mb-2 z-10 lg:mt-1">
+			<Link to="/" className="flex items-center md:mb-2 z-10 lg:mt-1">
 				<img className="w-[45px] md:mb-2 lg:mb-0" src={Logo} alt="Logo Image" />
 				<h1 className="text-xl font-semibold ml-2 text-[#aa6f35]">
 					<span className="text-green-600">Green</span>City
 				</h1>
-			</div>
+			</Link>
 
 			<div
 				onClick={handleClick}
