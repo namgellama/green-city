@@ -20,8 +20,3 @@
 	background: url(./assets/showcase.jpg) no-repeat center center/cover;
 	height: 650px;
 }
-
-#contact {
-	background: url(./assets/contact.svg);
-	padding: 2rem 0;
-}

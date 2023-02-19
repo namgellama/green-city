@@ -1,9 +1,9 @@
 function Contact() {
 	return (
-		<section id="contact" name="contact" className="w-full">
+		<section className="w-full py-8">
 			<h1 className="text-center text-4xl lg:text-5xl font-bold">Contact Us</h1>
-			<form className="flex flex-col items-center py-8">
-				<div className="container px-6 md:w-[720px] lg:w-[780px] flex flex-col mt-8 items-center">
+			<form className="flex flex-col items-center py-6">
+				<div className="container px-6 w-[350px] md:w-[550px] lg:w-[700px] flex flex-col mt-4 items-center">
 					<label
 						className="mb-3 text-xl font-semibold self-start"
 						htmlFor="name"
@@ -17,7 +17,7 @@ function Contact() {
 						autoComplete="off"
 					/>
 				</div>
-				<div className="container px-6 md:w-[720px] lg:w-[780px] flex flex-col mt-8 items-center">
+				<div className="container px-6 w-[350px] md:w-[550px] lg:w-[700px] flex flex-col mt-4 items-center">
 					<label
 						className="mb-3 text-xl font-semibold self-start"
 						htmlFor="email"
@@ -31,7 +31,7 @@ function Contact() {
 						autoComplete="off"
 					/>
 				</div>
-				<div className="container px-6 md:w-[720px] lg:w-[780px] flex flex-col mt-8 items-center">
+				<div className="container px-6 w-[350px] md:w-[550px] lg:w-[700px] flex flex-col mt-4 items-center">
 					<label
 						className="mb-3 text-xl font-semibold self-start"
 						htmlFor="phone"
@@ -45,7 +45,7 @@ function Contact() {
 						autoComplete="off"
 					/>
 				</div>
-				<div className="container px-6 md:w-[720px] lg:w-[780px] flex flex-col mt-8 items-center">
+				<div className="container px-6 w-[350px] md:w-[550px] lg:w-[700px] flex flex-col mt-4 items-center">
 					<label
 						className="mb-3 text-xl font-semibold self-start"
 						htmlFor="message"
@@ -53,12 +53,12 @@ function Contact() {
 						Message
 					</label>
 					<textarea
-						className="w-[100%] h-[180px] rounded-md border-2 border-gray-300 bg-gray-200 outline-0 p-4"
+						className="w-[100%] h-[130px] rounded-md border-2 border-gray-300 bg-gray-200 outline-0 p-4"
 						id="message"
 						autoComplete="off"
 					/>
 				</div>
-				<div className="w-full flex justify-center mt-8">
+				<div className="w-full flex justify-center mt-7">
 					<input
 						className="bg-[#111] text-[#fffbfb] uppercase cursor-pointer outline-0 border-0 w-[50%] lg:w-[25%] py-3 rounded-md"
 						type="button"
