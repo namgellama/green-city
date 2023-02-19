@@ -3,7 +3,7 @@ function Contact() {
 		<section className="w-full py-8">
 			<h1 className="text-center text-4xl lg:text-5xl font-bold">Contact Us</h1>
 			<form className="flex flex-col items-center py-6">
-				<div className="container px-6 w-[350px] md:w-[550px] lg:w-[700px] flex flex-col mt-4 items-center">
+				<div className="container px-6 w-[375px] md:w-[550px] lg:w-[700px] flex flex-col mt-4 items-center">
 					<label
 						className="mb-3 text-xl font-semibold self-start"
 						htmlFor="name"
@@ -17,7 +17,7 @@ function Contact() {
 						autoComplete="off"
 					/>
 				</div>
-				<div className="container px-6 w-[350px] md:w-[550px] lg:w-[700px] flex flex-col mt-4 items-center">
+				<div className="container px-6 w-[375px] md:w-[550px] lg:w-[700px] flex flex-col mt-4 items-center">
 					<label
 						className="mb-3 text-xl font-semibold self-start"
 						htmlFor="email"
@@ -31,7 +31,7 @@ function Contact() {
 						autoComplete="off"
 					/>
 				</div>
-				<div className="container px-6 w-[350px] md:w-[550px] lg:w-[700px] flex flex-col mt-4 items-center">
+				<div className="container px-6 w-[375px] md:w-[550px] lg:w-[700px] flex flex-col mt-4 items-center">
 					<label
 						className="mb-3 text-xl font-semibold self-start"
 						htmlFor="phone"
@@ -45,7 +45,7 @@ function Contact() {
 						autoComplete="off"
 					/>
 				</div>
-				<div className="container px-6 w-[350px] md:w-[550px] lg:w-[700px] flex flex-col mt-4 items-center">
+				<div className="container px-6 w-[375px] md:w-[550px] lg:w-[700px] flex flex-col mt-4 items-center">
 					<label
 						className="mb-3 text-xl font-semibold self-start"
 						htmlFor="message"
@@ -60,7 +60,7 @@ function Contact() {
 				</div>
 				<div className="w-full flex justify-center mt-7">
 					<input
-						className="bg-[#111] text-[#fffbfb] uppercase cursor-pointer outline-0 border-0 w-[50%] lg:w-[25%] py-3 rounded-md"
+						className="bg-[#111] text-[#fffbfb] uppercase cursor-pointer outline-0 border-0 w-[35%] md:w-[20%] lg:w-[10%] py-2 rounded-md"
 						type="button"
 						value="Send"
 					/>
