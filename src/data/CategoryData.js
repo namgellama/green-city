@@ -15,7 +15,7 @@ const CategoryData = [
 	},
 	{
 		id: 3,
-		title: 'New Category',
+		title: 'Coming Soon',
 		img: NewCategory,
 	},
 ];
